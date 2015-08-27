@@ -25,7 +25,6 @@ atom.buffer.Ring = function(capacity) {
 /**
  * Attempts to insert an item into the buffer, and returns whether the
  * operation was successful or not.
- * @method push
  * @param {T} item The item to attempt to insert.
  * @return {boolean} Whether the operation was successful.
  */
@@ -42,7 +41,6 @@ atom.buffer.Ring.prototype.push = function(item) {
 
 /**
  * Returns the item at first position or null if there is no item to return.
- * @method pop
  * @return {T|null} Item at first position or null if buffer is empty. 
  */
 atom.buffer.Ring.prototype.pop = function() {
